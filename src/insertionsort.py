@@ -3,7 +3,7 @@ from random import randint
 
 def randoms(n):
     """
-    产生10随机数
+    产生50随机数
     """
     for i in xrange(0, 50):
         x = randint(0, 500)
