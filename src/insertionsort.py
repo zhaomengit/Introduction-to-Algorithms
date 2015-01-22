@@ -1,4 +1,7 @@
 # -*- coding:utf-8 -*-
+"""
+插入排序
+"""
 from random import randint
 
 def randoms(n):
