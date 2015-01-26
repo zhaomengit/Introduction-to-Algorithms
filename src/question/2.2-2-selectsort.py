@@ -23,7 +23,7 @@ def randoms(arg_arr):
 
 def select_sort(arg_arr):
     """
-    插入排序
+    选择排序
     """
     for i in xrange(0, len(arg_arr) - 1):
         small = i
