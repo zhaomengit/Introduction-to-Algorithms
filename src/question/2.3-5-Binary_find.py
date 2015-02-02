@@ -44,6 +44,16 @@ def recursion_binary_find(A, low, high, element):
         return recursion_binary_find(A, mid + 1, high, element)
 
 
+def find_re(A, n, element):
+    if n < 0:
+        return -1
+    else:
+        if A[n] == element:
+            return n
+        else:
+            return find_re(A, n - 1, element)
+
+
 if __name__ == '__main__':
     f_list = []
     randoms(f_list)
@@ -51,5 +61,6 @@ if __name__ == '__main__':
     print f_list
     ele = raw_input("find element > ")                      # 通过raw_input获取输入的是字符串，下面需要使用int来转换
     # index = binary_find(f_list, 0, len(f_list) - 1, int(element))
-    index = recursion_binary_find(f_list, 0, len(f_list) - 1, int(ele))
+    # index = recursion_binary_find(f_list, 0, len(f_list) - 1, int(ele))
+    index = find_re(f_list, len(f_list) - 1, int(ele))
     print index
