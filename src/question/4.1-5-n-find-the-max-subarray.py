@@ -10,7 +10,6 @@ class MaxSubarray:
         self.left = 0    # 左边的坐标
         self.right = 0    # 右边的坐标
         self.sum_sub = 0  # 最大子数组的和
-        self.max_sum = 0
 
 
 def find_maximum_subarray(A, low, high):
